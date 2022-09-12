@@ -2,9 +2,9 @@ var express = require('express');
 var path = require('path');
 var serveStatic = require('serve-static');
 app = express();
-app.use(serveStatic(__dirname + "/dist/index.html"));
+app.use(serveStatic(__dirname + "/dist"));
 var port = process.env.PORT || 80;
-var hostname = '127.0.0.1';
+var hostname = 'vueapppro.herokuapp.com';
 
 app.listen(port, hostname, () => {
    console.log(`Server running at http://${hostname}:${port}/`);
